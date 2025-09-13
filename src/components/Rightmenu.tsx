@@ -1,11 +1,9 @@
-
-// import "./App.css"
-
+import logos from './logo.png'
 const Leftmenu = () => {
     return (
         <div className="main_boxr">
             <input type="checkbox" className="inputhider" id="click" />
-                {/* <div className="crossr" id="click">
+            {/* <div className="crossr" id="click">
                     <label htmlFor="click"><i className="fa-solid fa-xmark"></i></label>
                 </div> */}
             <div className="barr" id="click">
@@ -13,32 +11,27 @@ const Leftmenu = () => {
             </div>
             <div className="sidebarr">
                 <div className="menur">
+            <img className='imges' src={logos} alt="this is not avlible" />
                     <ul>
-                        <li>
-                            <i className="fa-regular fa-house"></i>
-                            <a href="#">Home</a>
-                        </li>
                         <li>
                             <i className="fa-regular fa-thumbs-up"></i>
                             <a href="#">Liked Videos</a>
-                        </li>
-                        <li>
-                            <i className="fa-solid fa-clock-rotate-left"></i>
-                            <a href="#">History</a>
                         </li>
                         <li>
                             <i className="fa-solid fa-video"></i>
                             <a href="#">My Content</a>
                         </li>
                         <li>
-                            <i className="fa-regular fa-folder-open"></i>
-                            <a href="#">Collections</a>
+                            <i className="fa-regular fa-circle-question"></i>
+                            <a href="#">Supports</a>
                         </li>
                         <li>
-                            <i className="fa-solid fa-user"></i>
-                            <a href="#">Subscribers</a>
+                            <i className="fa-solid fa-gear"></i>
+                            <a href="#">Setting</a>
                         </li>
                     </ul>
+                    <button className='btns1-menu'>Log in</button>
+                    <button className='btns2-menu btns2'>Sign up</button>
                 </div>
             </div>
         </div>

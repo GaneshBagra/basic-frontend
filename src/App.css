@@ -179,10 +179,6 @@ img {
         transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     }
 
-    hr {
-        display: none;
-    }
-
     .searchIcon {
         border: 0;
         position: fixed;
@@ -327,6 +323,7 @@ a:hover {
     position: fixed;
     right: 30px;
     width: 190px;
+    background-color: #242424;
 }
 
 .inputhider{
@@ -340,10 +337,10 @@ a:hover {
     height: 100vh;
     width: 190px;
     position: fixed;
-    background-color: transparent;
+    background-color: #242424;
     border-left: 1px solid white;
     right:-250px;
-    top: 30px;
+    top: -55px;
     transition: all 1000ms  ease-out;
 }
 
@@ -353,19 +350,13 @@ a:hover {
     position: fixed;
     margin-top: 8px;
     right: 30px;
+    z-index: 1;
 }
 
 .crossr{
     position: absolute;
     left: 10px;
 }
-/* .sidebarr .crossr{
-    font-size: 15px;
-    color: white;
-    position: absolute;
-    margin-top: 6px;
-    right: 170px;
-} */
 .sidebarr{
     padding: 4px 8px ;
     font-size: 17px;
@@ -375,10 +366,17 @@ a:hover {
 }
  .sidebarr .menur{
     position: absolute;
-    margin-top: 8px;
+    margin: top -60px;
     width: 97%;
  }
-
+.imges{
+    margin-bottom: 100px;
+    position: fixed;
+    top: 20px;
+}
+ul{
+    margin-top: 90px;
+}
  .sidebarr .menur li{
     margin-top: 5px;
     padding: 6px 13px;
@@ -400,3 +398,28 @@ a:hover {
  .sidebarr .menur i{
     padding: 0 6px;
  }
+.btns1-menu {
+    background-color: transparent;
+    position: absolute;
+    right: 8px;
+    bottom: -320px;
+    border-radius: 0;
+    border: 0;
+    width: 170px;
+}
+
+.btns1-menu:hover {
+    background-color: rgb(76, 86, 100);
+}
+
+.btns2-menu {
+    background-color: #ae7aff;
+    color: black;
+    position: absolute;
+    right: 8px;
+    border-radius: 0;
+    border: 0;
+    box-shadow: 5px 4px 0 rgb(76, 86, 100);
+    width: 170px;
+    bottom: -380px;
+}
