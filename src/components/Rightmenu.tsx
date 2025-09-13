@@ -1,5 +1,5 @@
 import logos from './logo.png'
-const Leftmenu = () => {
+const Rightmenu = () => {
     return (
         <div className="main_boxr">
             <input type="checkbox" className="inputhider" id="click" />
@@ -31,7 +31,7 @@ const Leftmenu = () => {
                         </li>
                     </ul>
                     <button className='btns1-menu'>Log in</button>
-                    <button className='btns2-menu btns2'>Sign up</button>
+                    <button className='btns2-menu'>Sign up</button>
                 </div>
             </div>
         </div>
@@ -39,4 +39,4 @@ const Leftmenu = () => {
 
 }
 
-export default Leftmenu
+export default Rightmenu

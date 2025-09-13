@@ -1,4 +1,3 @@
-
 /* navBar Css */
 
 hr {
@@ -13,7 +12,8 @@ img {
     position: fixed;
     height: 50px;
 }
-.mensimg{
+
+.mensimg {
     display: none;
 }
 
@@ -125,7 +125,8 @@ img {
     .btns2 {
         display: none;
     }
-    .mensimg{
+
+    .mensimg {
         display: block;
     }
 
@@ -278,30 +279,28 @@ a:hover {
     padding: 0 6px;
 }
 
-.sidebarl .menul .supportl {
-    position: absolute;
-    bottom: -250px;
-    width: 85%;
+.supportl {
+    position: relative;
+    top: 40vh;
 }
 
 .sidebarl .menul .settingsl {
-    position: absolute;
-    bottom: -300px;
-    /* margin-top: 15px; */
-    width: 85%;
+    position: relative;
+    top: 41vh;
 }
 
 @media only screen and (max-width:750px) {
     .sidebarl .menul a {
         display: none;
     }
+
     .sidebarl {
         width: 70px;
     }
 }
 
 @media only screen and (max-width:650px) {
-    .sidebarl{
+    .sidebarl {
         display: none;
     }
 }
@@ -317,31 +316,35 @@ a:hover {
     padding: 0;
     font-family: monospace;
 }
-.main_boxr{
+
+.main_boxr {
     display: flex;
-    float:right;
+    float: right;
     position: fixed;
     right: 30px;
     width: 190px;
     background-color: #242424;
+    z-index: 1;
 }
 
-.inputhider{
+.inputhider {
     display: none;
-} 
-
-#click:checked~.sidebarr{
-   right: -20px;
 }
+
+#click:checked~.sidebarr {
+    right: -20px;
+}
+
 .sidebarr {
     height: 100vh;
     width: 190px;
     position: fixed;
     background-color: #242424;
     border-left: 1px solid white;
-    right:-250px;
+    right: -250px;
     top: -55px;
-    transition: all 1000ms  ease-out;
+    transition: all 1000ms ease-out;
+    z-index: 2;
 }
 
 .barr {
@@ -350,59 +353,72 @@ a:hover {
     position: fixed;
     margin-top: 8px;
     right: 30px;
-    z-index: 1;
+    z-index: 3;
+    display: none;
 }
 
-.crossr{
+.crossr {
     position: absolute;
     left: 10px;
 }
-.sidebarr{
-    padding: 4px 8px ;
+
+.sidebarr {
+    padding: 4px 8px;
     font-size: 17px;
     color: white;
     position: absolute;
     margin-top: 30px;
 }
- .sidebarr .menur{
+
+.sidebarr .menur {
     position: absolute;
     margin: top -60px;
     width: 97%;
- }
-.imges{
+}
+
+.imges {
     margin-bottom: 100px;
     position: fixed;
     top: 20px;
 }
-ul{
+
+ul {
     margin-top: 90px;
 }
- .sidebarr .menur li{
+
+.sidebarr .menur li {
     margin-top: 5px;
     padding: 6px 13px;
     border: 1px solid white;
     transition: all 350ms ease-in-out;
     list-style: none;
- }
- .sidebarr .menur li:hover{
+}
+
+.sidebarr .menur li:hover {
     background-color: blueviolet;
- }
- .sidebarr .menur i,a{
+}
+
+.sidebarr .menur i,
+a {
     color: white;
     font-size: 17px;
     text-decoration: none;
- }
- .sidebarr .menur i,a:hover{
+}
+
+.sidebarr .menur i,
+a:hover {
     color: white;
- }
- .sidebarr .menur i{
+}
+
+.sidebarr .menur i {
     padding: 0 6px;
- }
+}
+
 .btns1-menu {
     background-color: transparent;
     position: absolute;
     right: 8px;
-    bottom: -320px;
+    top: 85vh;
     border-radius: 0;
     border: 0;
     width: 170px;
@@ -421,5 +437,81 @@ ul{
     border: 0;
     box-shadow: 5px 4px 0 rgb(76, 86, 100);
     width: 170px;
-    bottom: -380px;
+    top: 94vh;
+}
+
+.btns2-menu:active {
+    box-shadow: 0px 0px 0 #ae7aff;
+    transform: translate(4px, 4px);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+@media only screen and (max-width:650px) {
+    .barr {
+    display: block;
+}
+}
+
+
+
+/* Bottum menu css */
+
+.sidebarb {
+    display: none;
+}
+
+@media only screen and (max-width:650px) {
+    .sidebarb {
+        display: inline;
+        position: fixed;
+        border-top: 1px solid white;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 94vh;
+    }
+}
+
+.sidebarb ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 2fr 2fr ;
+    flex-shrink: 2 1 1 1;
+    box-sizing: border-box;
+}
+
+.sidebarb ul li {
+    margin-top: 8px;
+    text-align: center;
+
+}
+
+
+
+/* Main contents css */
+
+.main-contents {
+    /* background-color: white; */
+    position: fixed;
+    top: 80px;
+    left: 200px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media only screen and (max-width:750px) {
+    .main-contents {
+        left: 80px;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .main-contents{
+        left: 0;
+        bottom: 55px;
+    }
 }

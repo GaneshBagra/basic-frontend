@@ -20,7 +20,7 @@ createRoot(document.getElementById("root")!).render(
 
         {/* Routes WITH layout */}
         <Route element={<Layout />}>
-          <Route path="/no-videos" element={<div>Home Page</div>} />
+          <Route path="/no-videos" element={<div className="main-contents">Home Page</div>} />
         </Route>
       </Routes>
     </BrowserRouter>
