@@ -1,5 +1,4 @@
 import { } from 'react-bootstrap';
-import "./styles.css"
 import logos from './logo.png'
 import type React from 'react';
 interface rnderProps{
