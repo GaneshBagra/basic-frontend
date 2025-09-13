@@ -1,19 +1,13 @@
-// src/components/Layout.tsx
-import React from 'react'
-import Header from '../Header'
+import Header from '../Header';
+import { Outlet } from 'react-router-dom';
 
-
-interface LayoutProps {
-    children: React.ReactNode
-}
-
-const Layout: React.FC<LayoutProps> = ({ children }) => (
+const Layout = () => (
     <>
         <Header />
-        <main className="main-content" >
-            {children}
+        <main className="main-content"  >
+            <Outlet />
         </main>
     </>
-)
+);
 
-export default Layout
+export default Layout;
