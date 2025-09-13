@@ -7,8 +7,10 @@ hr {
 
 img {
     position: fixed;
-    left: 30px;
-    top: 30px;
+    height: 50px;
+}
+.mensimg{
+    display: none;
 }
 
 .searchIcon {
@@ -96,7 +98,13 @@ img {
 .btns3 {
     display: none;
 }
-.btns4{
+
+.btns4 {
+    display: none;
+}
+
+.btns1-1,
+.btns2-1 {
     display: none;
 }
 
@@ -106,24 +114,15 @@ img {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-/* .btns1-1, */
-/* .btns2-1 {
-    display: none;
-}
-
-.mens {
-    display: none;
-} */
-
-
-
-
 @media only screen and (max-width: 650px) {
 
     .hide .Search,
     .btns1,
     .btns2 {
         display: none;
+    }
+    .mensimg{
+        display: block;
     }
 
     .btns1-1 {
@@ -150,7 +149,8 @@ img {
         right: 0px;
         top: 0;
     }
-    .mens:active{
+
+    .mens:active {
         right: 0;
     }
 
@@ -158,7 +158,7 @@ img {
         display: block;
         background-color: #ae7aff;
         color: black;
-        position:relative;
+        position: relative;
         top: 130px;
         left: 80px;
         border-radius: 0;
@@ -174,9 +174,11 @@ img {
         transform: translate(4px, 4px);
         transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     }
-hr{
-    display: none;
-}
+
+    hr {
+        display: none;
+    }
+
     .searchIcon {
         border: 0;
         position: fixed;
@@ -198,11 +200,12 @@ hr{
     .btns3:hover {
         color: rgb(179, 109, 245);
     }
-    .btns4{
+
+    .btns4 {
         background-color: transparent;
         display: block;
         color: rgb(255, 255, 255);
-        position:relative;
+        position: relative;
         left: 230px;
         border-radius: 0;
         border: 0;
@@ -211,10 +214,10 @@ hr{
 
 @media only screen and (max-width:790px) {
     .pos {
-        display: flex;
         display: block;
         width: 85%;
         margin-left: auto;
         margin-right: auto;
     }
+
 }
