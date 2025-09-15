@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 
 const Privacy = () => {
-  return <div className="main-content">
+  return <div className="">
     <div className="d-flex justify-content-center mt-5">
       <p>Privacy Policy</p>
       
