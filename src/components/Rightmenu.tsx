@@ -1,7 +1,7 @@
 import logos from './logo.png'
 const Rightmenu = () => {
     return (
-        <div className="main_boxr">
+        <div>
             <input type="checkbox" className="inputhider" id="click" />
             {/* <div className="crossr" id="click">
                     <label htmlFor="click"><i className="fa-solid fa-xmark"></i></label>
