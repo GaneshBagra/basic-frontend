@@ -1,4 +1,6 @@
 const Terms = () => {
-  return <div className="">Terms and Conditions Page</div>;
+  return (
+    <></>
+  );
 };
 export default Terms;
