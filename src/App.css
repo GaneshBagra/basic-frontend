@@ -251,6 +251,8 @@ img {
     border: 1px solid white;
     transition: all 350ms ease-in-out;
     list-style: none;
+    display: flex;
+    cursor: pointer;
 }
 
 .sidebarl .menul li:hover {
