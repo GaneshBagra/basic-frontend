@@ -683,7 +683,7 @@ a {
 
 .hrline {
     height: 0px;
-    margin-top: 50px;
+    margin: 50px 0 80px 0;
     border: 1px solid white;
 }
 
@@ -695,4 +695,34 @@ a {
 .textbottoms{
     position: absolute;
     right: 1px;
+}
+
+
+/* privacy css */
+
+.respon{
+    margin: 0 80px;
+}
+
+@media only screen and (max-width:1000px) {
+    .respon{
+        margin: 0 70px;
+    }
+}
+@media only screen and (max-width:650px) {
+    .respon{
+        margin:0 15px;
+    }
+}
+
+.respon h4{
+    margin: 30px 0 20px 0;
+    line-height: 2.25rem;
+    font-size: 1.875rem;
+}
+.respon p{
+    margin-bottom: 1rem;
+}
+.hrliness{
+    margin:50px 0;
 }
