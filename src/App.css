@@ -1,9 +1,9 @@
-
-*{
-     font-family: ui-sans-serif, system-ui, sans-serif, 
-               "Apple Color Emoji", "Segoe UI Emoji", 
-               "Segoe UI Symbol", "Noto Color Emoji";
+* {
+    font-family: ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 /* navBar Css */
 
 img {
@@ -486,7 +486,9 @@ a {
 .prcconten {
     padding: 15px;
     width: 100%;
-    height: 100%;
+    height: 80px;
+    margin-top: 0;
+    display: contents;
     position: fixed;
     top: 5px;
     z-index: 5;
@@ -498,12 +500,14 @@ a {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -50px;
 }
 
 .privac ul li {
     overflow: hidden;
     float: left;
     padding: 0 25px;
+    margin: 10px;
 }
 
 .privac ul :hover {
@@ -551,77 +555,22 @@ a {
     .btns2,
     .privac ul {
         display: none;
-
     }
 }
 
-/*
-    .btns1-1 {
-        background-color: #ae7aff;
-        color: black;
-        position: relative;
-        top: 80px;
-        left: 80px;
-        display: block;
-        border-radius: 0;
-        border: 0;
-        height: 60px;
-        width: 200px;
-        box-shadow: 8px 8px 0 rgb(76, 86, 100);
-
-    }
-
-    .btns2-1 {
-        display: block;
-        background-color: #ae7aff;
-        color: black;
-        position: relative;
-        top: 130px;
-        left: 80px;
-        border-radius: 0;
-        border: 0;
-        height: 60px;
-        width: 200px;
-        box-shadow: 8px 8px 0 rgb(76, 86, 100);
-    }
-
-    .btns2-1:active,
-    .btns1-1:active {
-        box-shadow: 0px 0px 0 #ae7aff;
-        transform: translate(4px, 4px);
-        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    }
-
-
-    .btns3 {
-        background-color: transparent;
-        display: block;
-        color: rgb(255, 255, 255);
-        position: fixed;
-        right: 10px;
-        border-radius: 0;
-        border: 0;
-    }
-
-    .btns3:hover {
-        color: rgb(179, 109, 245);
-    }
-
-    .btns4 {
-        background-color: transparent;
-        display: block;
-        color: rgb(255, 255, 255);
-        position: relative;
-        left: 230px;
-        border-radius: 0;
-        border: 0;
-    }
-*/
-
-
-
 #click:checked~.sidebarp {
     right: -250px;
+}
+
+.sidep {
+    width: 210px;
+    position: fixed;
+    right: -1px;
+    margin-left: 10px;
+    top: 5px;
+    height: 100%;
+    /* border-left: 1px solid white; */
+    display: none;
 }
 
 .sidebarp {
@@ -716,11 +665,32 @@ a {
 }
 
 @media only screen and (max-width:850px) {
-    .barp {
+
+    .barp,
+    .sidep {
         display: block;
     }
 
     #click:checked~.sidebarp {
         right: 0px;
     }
+    .privac{
+        margin-bottom: 0;
+    }
+}
+
+.hrline {
+    height: 0px;
+    margin-top: 50px;
+    border: 1px solid white;
+}
+
+.imgesbottoms{
+    position: sticky;
+    bottom: 1px;
+    left: 1px;
+}
+.textbottoms{
+    position: absolute;
+    right: 1px;
 }
