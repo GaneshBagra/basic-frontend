@@ -32,7 +32,7 @@ img {
 
 .conten {
     padding: 15px;
-    width:100%;
+    width: 100%;
     height: 100%;
     position: fixed;
     top: 5px;
@@ -353,7 +353,7 @@ a:hover {
 }
 
 .sidebarr .menur li {
-    margin-top:5px;
+    margin-top: 5px;
     padding: 6px 13px;
     border: 1px solid white;
     transition: all 350ms ease-in-out;
@@ -471,5 +471,251 @@ a {
     .main-content {
         left: 0;
         bottom: 55px;
+    }
+}
+
+
+/* privacy Header Css */
+
+
+.prcconten {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 5px;
+    z-index: 5;
+}
+
+.privac {
+    display: flex;
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.privac ul li {
+    overflow: hidden;
+    float: left;
+    padding: 0 25px;
+}
+
+.privac ul :hover {
+    background-color: #ae7aff;
+    color: black !important;
+}
+
+.btns1 {
+    background-color: transparent;
+    position: fixed;
+    right: 120px;
+    border-radius: 0;
+    border: 0;
+}
+
+.btns1:hover {
+    background-color: rgb(76, 86, 100);
+}
+
+.btns2 {
+    background-color: #ae7aff;
+    color: black;
+    position: fixed;
+    right: 10px;
+    border-radius: 0;
+    border: 0;
+    box-shadow: 5px 4px 0 rgb(76, 86, 100);
+}
+
+
+.btns1-1,
+.btns2-1 {
+    display: none;
+}
+
+.btns2:active {
+    box-shadow: 0px 0px 0 #ae7aff;
+    transform: translate(4px, 4px);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 850px) {
+
+    .btns1,
+    .btns2,
+    .privac ul {
+        display: none;
+
+    }
+}
+
+/*
+    .btns1-1 {
+        background-color: #ae7aff;
+        color: black;
+        position: relative;
+        top: 80px;
+        left: 80px;
+        display: block;
+        border-radius: 0;
+        border: 0;
+        height: 60px;
+        width: 200px;
+        box-shadow: 8px 8px 0 rgb(76, 86, 100);
+
+    }
+
+    .btns2-1 {
+        display: block;
+        background-color: #ae7aff;
+        color: black;
+        position: relative;
+        top: 130px;
+        left: 80px;
+        border-radius: 0;
+        border: 0;
+        height: 60px;
+        width: 200px;
+        box-shadow: 8px 8px 0 rgb(76, 86, 100);
+    }
+
+    .btns2-1:active,
+    .btns1-1:active {
+        box-shadow: 0px 0px 0 #ae7aff;
+        transform: translate(4px, 4px);
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+
+    .btns3 {
+        background-color: transparent;
+        display: block;
+        color: rgb(255, 255, 255);
+        position: fixed;
+        right: 10px;
+        border-radius: 0;
+        border: 0;
+    }
+
+    .btns3:hover {
+        color: rgb(179, 109, 245);
+    }
+
+    .btns4 {
+        background-color: transparent;
+        display: block;
+        color: rgb(255, 255, 255);
+        position: relative;
+        left: 230px;
+        border-radius: 0;
+        border: 0;
+    }
+*/
+
+
+
+#click:checked~.sidebarp {
+    right: -250px;
+}
+
+.sidebarp {
+    width: 210px;
+    background-color: #242424;
+    border-left: 1px solid white;
+    right: -250px;
+    top: -35px;
+    transition: all 1000ms ease-out;
+}
+
+.barp {
+    font-size: 20px;
+    position: fixed;
+    right: 30px;
+    z-index: 4;
+    display: none;
+}
+
+
+.sidebarp {
+    font-size: 17px;
+    position: absolute;
+    margin-top: 30px;
+    z-index: 2;
+}
+
+.sidebarp .menup {
+    position: absolute;
+    margin-top: 60px;
+    width: 95%;
+}
+
+.imges {
+    margin-bottom: 100px;
+    position: absolute;
+    top: -60px;
+    right: 150px;
+}
+
+.sidebarp .menup li {
+    margin-top: 5px;
+    padding: 6px 13px;
+    border: 1px solid white;
+    transition: all 350ms ease-in-out;
+    list-style: none;
+}
+
+.sidebarp .menup li:hover {
+    background-color: blueviolet;
+}
+
+.sidebarp .menup,
+a {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.btns1-menup {
+    background-color: transparent;
+    position: absolute;
+    right: 8px;
+    top: 70vh;
+    border-radius: 0;
+    border: 0;
+    width: 170px;
+}
+
+.btns1-menup:hover {
+    background-color: rgb(76, 86, 100);
+}
+
+.btns2-menup {
+    background-color: #ae7aff;
+    color: black;
+    position: absolute;
+    right: 8px;
+    border-radius: 0;
+    border: 0;
+    box-shadow: 5px 4px 0 rgb(76, 86, 100);
+    width: 170px;
+    top: 80vh;
+}
+
+.btns2-menup:active {
+    box-shadow: 0px 0px 0 #ae7aff;
+    transform: translate(4px, 4px);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+@media only screen and (max-width:850px) {
+    .barp {
+        display: block;
+    }
+
+    #click:checked~.sidebarp {
+        right: 0px;
     }
 }
