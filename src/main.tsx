@@ -30,6 +30,26 @@ createRoot(document.getElementById("root")!).render(
             path="/no-videos"
             element={<div className="main-contents">Home Page</div>}
           />
+          <Route
+            path="/home"
+            element={<div className="main-contents">all videos</div>}
+          />
+          <Route
+            path="/liked-videos"
+            element={<div className="main-contents">Liked videos</div>}
+          />
+          <Route
+            path="/history"
+            element={<div className="main-contents">Liked videos</div>}
+          />
+          <Route
+            path="/my-content"
+            element={<div className="main-contents">Liked videos</div>}
+          />
+          <Route
+            path="/collections"
+            element={<div className="main-contents">Liked videos</div>}
+          />
         </Route>
       </Routes>
     </BrowserRouter>
