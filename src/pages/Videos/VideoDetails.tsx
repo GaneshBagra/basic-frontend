@@ -1,13 +1,14 @@
 import ReactPlayer from 'react-player'
 import image from "../../components/layout/imges.webp";
 
+
 const VideoDetails = () => {
   return (
     <div className="video-main overflow-y-auto overflow-x-hidden h-100">
       <div className="row p-2 text-light">
         <div className="col-7">
             <ReactPlayer
-      src="https://www.youtube.com/watch?v=_t2GVaQasRY"
+      src="../../components/layout/sampleVideo.mp4"
       controls={true}
       width="100%"
       height="360px"
