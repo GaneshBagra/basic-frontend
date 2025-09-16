@@ -19,6 +19,7 @@ createRoot(document.getElementById("root")!).render(
     <BrowserRouter basename="/">
       <Routes>
         {/* Routes WITHOUT layout */}
+        <Route path="/videos-details" element={<VideoDetails />} />
         <Route path="/login" element={<App />} />
         <Route path="/register" element={<Register />} />
 
@@ -42,8 +43,7 @@ createRoot(document.getElementById("root")!).render(
             path="/liked-videos"
             element={<div className="main-contents">Liked videos</div>}
           />
-          <Route path="/videos-details" element={<VideoDetails />}
-          />
+          
           <Route
             path="/history"
             element={<div className="main-contents">Liked videos</div>}
@@ -55,8 +55,9 @@ createRoot(document.getElementById("root")!).render(
           <Route
             path="/collections"
             element={<div className="main-contents">Liked videos</div>}
-          />
+            />
         </Route>
+            
       </Routes>
     </BrowserRouter>
   </StrictMode>

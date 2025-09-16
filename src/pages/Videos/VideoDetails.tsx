@@ -1,14 +1,16 @@
 import ReactPlayer from 'react-player'
 import image from "../../components/layout/imges.webp";
-
+import source from "../../components/8004696-uhd_3840_2160_25fps.mp4"
 
 const VideoDetails = () => {
   return (
+    <>
+    
     <div className="video-main overflow-y-auto overflow-x-hidden h-100">
       <div className="row p-2 text-light">
         <div className="col-7">
             <ReactPlayer
-      src="../../components/layout/sampleVideo.mp4"
+      src={source}
       controls={true}
       width="100%"
       height="360px"
@@ -103,6 +105,7 @@ const VideoDetails = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
