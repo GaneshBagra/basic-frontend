@@ -9,8 +9,8 @@ import Terms from "./pages/Terms";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/layout/layout.tsx";
 import PrivacyPageLayout from "./components/layout/privacyPageLayout.tsx";
-import Home from "./pages/Videos/home.tsx";
 import Novideos from "./pages/Videos/NoVideos.tsx"
+import Home from "./pages/Videos/Home.tsx";
 
 
 createRoot(document.getElementById("root")!).render(

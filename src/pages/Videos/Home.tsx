@@ -1,9 +1,10 @@
 import logos from "../../components/layout/imges.webp"
 
 const Home = () => {
-    return (
-        < div className = 'all-Videos-main m-2' >
-        <div className="row">
+  return (
+    <>
+    <div className="all-Videos-main position-relative overflow-y-auto overflow-x-hidden h-100" >
+        <div className="row g-3 p-3 ">
             <div className="col-4">
                 <img src={logos} alt="" />
                 <p className='font-sizess'>JavaScript Fundamentals: Variables and Data Types</p>
@@ -59,7 +60,8 @@ const Home = () => {
                 <p>code Master</p>
             </div>
         </div>
-            </div >
-    )
-}
-export default Home
+    </div>
+    </>
+  );
+};
+export default Home;

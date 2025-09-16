@@ -2,10 +2,19 @@ import Header from '../HeadSection/Header';
 import { Outlet } from 'react-router-dom';
 const Layout = () => (
     <>
+    <div className="container-fluid">
+
         <Header />
-        <main className="main-content" style={{ background: "white" }}>
+        <div className="bg-white main-content"  style={{
+            
+            
+        }}>
+
             <Outlet />
-        </main>
+        </div>
+    </div>
+        
+    
     </>
 );
 

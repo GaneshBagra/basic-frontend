@@ -458,12 +458,14 @@ a {
 
 .main-content {
     /* background-color: white; */
-    position: fixed;
+    position: absolute;
     top: 80px;
     left: 210px;
     bottom: 0;
     right: 0;
-    z-index: 1;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    ;
 }
 
 @media only screen and (max-width:750px) {
@@ -476,6 +478,7 @@ a {
     .main-content {
         left: 0;
         bottom: 55px;
+        height: calc(100vh - 135px);
     }
 }
 
@@ -832,10 +835,6 @@ figure {
 
 /*All Videos css */
 
-.all-Videos-main{
-    height: 100%;
-    /* overflow-y:scroll; */
-}
 
 .row p {
     margin: 0;
