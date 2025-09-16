@@ -101,6 +101,36 @@ const VideoDetails = () => {
                 code Master
               </p>
             </div>
+            <div className="col-12">
+              <img src={image} alt="" />
+              <p>
+                <b>JavaScript Fundamentals: Variables and Data Types</b>
+                <br />
+                10.3k Views. 44 minutes ago
+                <br />
+                code Master
+              </p>
+            </div>
+            <div className="col-12">
+              <img src={image} alt="" />
+              <p>
+                <b>JavaScript Fundamentals: Variables and Data Types</b>
+                <br />
+                10.3k Views. 44 minutes ago
+                <br />
+                code Master
+              </p>
+            </div>
+            <div className="col-12">
+              <img src={image} alt="" />
+              <p>
+                <b>JavaScript Fundamentals: Variables and Data Types</b>
+                <br />
+                10.3k Views. 44 minutes ago
+                <br />
+                code Master
+              </p>
+            </div>
           </div>
         </div>
       </div>

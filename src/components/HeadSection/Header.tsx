@@ -1,17 +1,14 @@
 import Navbar from './Navbar'
-import Leftmenu from "./Leftmenu";
 import Rightmenu from "./Rightmenu"
-import Bottommenu from "./Bottommenu"
 const Header = () => {
 
    
 
     return (
-        <div className='conten'>
+        <div className='conten border-bottom py-2'>
             <Rightmenu/> 
           <Navbar />
-            <Leftmenu/>
-            <Bottommenu/>
+            
         </div>
 
 

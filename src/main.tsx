@@ -19,7 +19,6 @@ createRoot(document.getElementById("root")!).render(
     <BrowserRouter basename="/">
       <Routes>
         {/* Routes WITHOUT layout */}
-        <Route path="/videos-details" element={<VideoDetails />} />
         <Route path="/login" element={<App />} />
         <Route path="/register" element={<Register />} />
 
@@ -31,6 +30,7 @@ createRoot(document.getElementById("root")!).render(
 
         {/* Routes WITH layout */}
         <Route element={<Layout />}>
+        <Route path="/videos-details" element={<VideoDetails />} />
           <Route
             path="/no-videos"
             element={<Novideos />}
