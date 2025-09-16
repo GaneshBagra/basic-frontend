@@ -21,8 +21,8 @@ const PrivacyHeader = () => {
                         <a href="#" className="link-underline text-light link-underline-opacity-0">Pricing</a>
                     </li>
                 </ul>
-                <button className='btns1'>Log in</button>
-                <button className='btns2'>Sign up</button>
+                <button className='btns1p'>Log in</button>
+                <button className='btns2p'>Sign up</button>
 
             </div>
             <hr className='hrline' />
@@ -48,8 +48,8 @@ const PrivacyHeader = () => {
                                 <a href="#" className="link-underline text-light link-underline-opacity-0">Pricing</a>
                             </li>
                         </ul>
-                        <button className='btns1-menup'>Log in</button>
-                        <button className='btns2-menup'>Sign up</button>
+                        <button className='btns1p-menup'>Log in</button>
+                        <button className='btns2p-menup'>Sign up</button>
                     </div>
                 </div>
             </div>

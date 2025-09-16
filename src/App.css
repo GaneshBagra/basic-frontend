@@ -6,7 +6,8 @@
 
 /* navBar Css */
 
-img {
+header img,
+div img {
     position: fixed;
     height: 50px;
 }
@@ -123,9 +124,6 @@ img {
         display: none;
     }
 
-    .mensimg {
-        display: block;
-    }
 
     .btns1-1 {
         background-color: #ae7aff;
@@ -517,7 +515,7 @@ a {
     color: black !important;
 }
 
-.btns1 {
+.btns1p {
     background-color: transparent;
     position: fixed;
     right: 120px;
@@ -525,11 +523,11 @@ a {
     border: 0;
 }
 
-.btns1:hover {
+.btns1p:hover {
     background-color: rgb(76, 86, 100);
 }
 
-.btns2 {
+.btns2p {
     background-color: #ae7aff;
     color: black;
     position: fixed;
@@ -540,12 +538,12 @@ a {
 }
 
 
-.btns1-1,
-.btns2-1 {
+.btns1p-1,
+.btns2p-1 {
     display: none;
 }
 
-.btns2:active {
+.btns2p:active {
     box-shadow: 0px 0px 0 #ae7aff;
     transform: translate(4px, 4px);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -553,8 +551,8 @@ a {
 
 @media only screen and (max-width: 850px) {
 
-    .btns1,
-    .btns2,
+    .btns1p,
+    .btns2p,
     .privac ul {
         display: none;
     }
@@ -634,7 +632,7 @@ a {
 }
 
 
-.btns1-menup {
+.btns1p-menup {
     background-color: transparent;
     position: absolute;
     right: 8px;
@@ -644,11 +642,11 @@ a {
     width: 170px;
 }
 
-.btns1-menup:hover {
+.btns1p-menup:hover {
     background-color: rgb(76, 86, 100);
 }
 
-.btns2-menup {
+.btns2p-menup {
     background-color: #ae7aff;
     color: black;
     position: absolute;
@@ -660,7 +658,7 @@ a {
     top: 80vh;
 }
 
-.btns2-menup:active {
+.btns2p-menup:active {
     box-shadow: 0px 0px 0 #ae7aff;
     transform: translate(4px, 4px);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -676,7 +674,8 @@ a {
     #click:checked~.sidebarp {
         right: 0px;
     }
-    .privac{
+
+    .privac {
         margin-bottom: 0;
     }
 }
@@ -687,12 +686,13 @@ a {
     border: 1px solid white;
 }
 
-.imgesbottoms{
+.imgesbottoms {
     position: sticky;
     bottom: 1px;
     left: 1px;
 }
-.textbottoms{
+
+.textbottoms {
     position: absolute;
     right: 1px;
 }
@@ -700,29 +700,158 @@ a {
 
 /* privacy css */
 
-.respon{
+.respon {
     margin: 0 80px;
 }
 
 @media only screen and (max-width:1000px) {
-    .respon{
+    .respon {
         margin: 0 70px;
     }
 }
+
 @media only screen and (max-width:650px) {
-    .respon{
-        margin:0 15px;
+    .respon {
+        margin: 0 15px;
     }
 }
 
-.respon h4{
+.respon h4 {
     margin: 30px 0 20px 0;
     line-height: 2.25rem;
     font-size: 1.875rem;
 }
-.respon p{
+
+.respon p {
     margin-bottom: 1rem;
 }
-.hrliness{
-    margin:50px 0;
+
+.hrliness {
+    margin: 50px 0;
+}
+
+
+
+/* login css */
+
+.contener {
+    position: fixed;
+    top: 1vh;
+    background-color: rgb(18, 18, 18);
+}
+
+div figure img {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    height: 50px;
+}
+
+figure {
+    margin: auto;
+    margin-top: 0;
+    height: 100px;
+}
+
+.logincon {
+    width: 500px;
+    margin-top: -40vh;
+}
+
+.logincon input {
+    height: 50px;
+    margin: 0 0 15px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    background-color: transparent;
+}
+
+.logincon button {
+    background-color: rgb(174 122 255);
+}
+
+@media only screen and (max-width:750px) {
+    .logincon {
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .logincon {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width:250px) {
+    .logincon {
+        width: 120vw;
+    }
+}
+
+
+
+
+/* Sign up css */
+.singupcon {
+    width: 500px;
+    margin-top: -30vh;
+}
+
+.singupcon input {
+    height: 50px;
+    margin: 0 0 15px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    background-color: transparent;
+}
+
+.singupcon button {
+    background-color: rgb(174 122 255);
+}
+
+@media only screen and (max-width:750px) {
+    .singupcon {
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .singupcon {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width:250px) {
+    .singupcon {
+        width: 120vw;
+    }
+}
+
+
+/*All Videos css */
+
+.all-Videos-main{
+    height: 100%;
+    overflow-y:auto;
+}
+/* .row {
+    height: 100px;
+    overflow:auto;
+    border: 2px solid black;
+} */
+
+.row p {
+    margin: 0;
+}
+
+.font-sizess {
+    font-weight: 700;
+}
+
+.all-Videos-main .row img {
+    position: relative;
+    width: 100%;
+    height: 200px;
 }
