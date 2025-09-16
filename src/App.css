@@ -235,7 +235,7 @@ div img {
     border-right: 1px solid white;
     left: 10px;
     top: 80px;
-    transition: all 1000ms ease-out;
+    /* transition: all 1000ms ease-out; */
 }
 
 .sidebarl .menul {
@@ -247,14 +247,14 @@ div img {
     margin-top: 5px;
     padding: 6px 13px;
     border: 1px solid white;
-    transition: all 350ms ease-in-out;
+    /* transition: all 350ms ease-in-out; */
     list-style: none;
     display: flex;
     cursor: pointer;
 }
 
 .sidebarl .menul li:hover {
-    background-color: rgb(59 130 246 );
+    background-color: rgb(59 130 246);
 }
 
 .sidebarl .menul,
@@ -277,7 +277,7 @@ a:hover {
     position: fixed;
     bottom: 8vh;
     width: 193px;
-    transition: all 1000ms ease-out;
+    /* transition: all 1000ms ease-out; */
 }
 
 .settingsl {
@@ -850,34 +850,47 @@ figure {
     height: 200px;
 }
 
+.all-Videos-main .row .profile-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+    float: left;
+}
+
 
 
 /* Video Details css */
-.video-main .row{
+.video-main .row {
     overflow-y: auto;
 }
-.col-7{
+
+.col-7 {
     height: 100%;
     /* border: 2px solid white; */
 }
 
-.video{
-    height:380px;
+.video {
+    height: 380px;
 }
-.col-12{
+
+.col-12 {
     display: flex;
     flex-wrap: wrap;
 }
-.col-12 img{
+
+.col-12 img {
     margin: 5px;
     flex: 1;
 }
-.col-12 p{
+
+.col-12 p {
     margin: 5px;
     flex: 2;
 }
-.row .col-12 img{
+
+.row .col-12 img {
     position: relative;
     width: 100%;
     height: 100px;
-} 
+}
