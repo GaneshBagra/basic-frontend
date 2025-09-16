@@ -254,7 +254,7 @@ div img {
 }
 
 .sidebarl .menul li:hover {
-    background-color: blueviolet;
+    background-color: rgb(59 130 246 );
 }
 
 .sidebarl .menul,
@@ -849,3 +849,35 @@ figure {
     width: 100%;
     height: 200px;
 }
+
+
+
+/* Video Details css */
+.video-main .row{
+    overflow-y: auto;
+}
+.col-7{
+    height: 100%;
+    /* border: 2px solid white; */
+}
+
+.video{
+    height:380px;
+}
+.col-12{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-12 img{
+    margin: 5px;
+    flex: 1;
+}
+.col-12 p{
+    margin: 5px;
+    flex: 2;
+}
+.row .col-12 img{
+    position: relative;
+    width: 100%;
+    height: 100px;
+} 

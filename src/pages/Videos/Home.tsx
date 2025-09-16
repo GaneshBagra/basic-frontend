@@ -1,4 +1,5 @@
 import logos from "../../components/layout/imges.webp"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const Home = () => {
   return (

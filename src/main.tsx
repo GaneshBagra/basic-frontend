@@ -10,7 +10,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/layout/layout.tsx";
 import PrivacyPageLayout from "./components/layout/privacyPageLayout.tsx";
 import Novideos from "./pages/Videos/NoVideos.tsx"
-import Home from "./pages/Videos/Home.tsx";
+import Home from "./pages/Videos/home.tsx";
+import VideoDetails from "./pages/Videos/VideoDetails.tsx";
 
 
 createRoot(document.getElementById("root")!).render(
@@ -40,6 +41,8 @@ createRoot(document.getElementById("root")!).render(
           <Route
             path="/liked-videos"
             element={<div className="main-contents">Liked videos</div>}
+          />
+          <Route path="/videos-details" element={<VideoDetails />}
           />
           <Route
             path="/history"
