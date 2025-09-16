@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css"; 
+import "bootstrap/dist/css/bootstrap.min.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
@@ -9,6 +9,9 @@ import Terms from "./pages/Terms";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/layout/layout.tsx";
 import PrivacyPageLayout from "./components/layout/privacyPageLayout.tsx";
+import Home from "./pages/Videos/home.tsx";
+import Novideos from "./pages/Videos/NoVideos.tsx"
+
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -28,11 +31,11 @@ createRoot(document.getElementById("root")!).render(
         <Route element={<Layout />}>
           <Route
             path="/no-videos"
-            element={<div className="main-contents">Home Page</div>}
+            element={<Novideos />}
           />
           <Route
             path="/home"
-            element={<div className="main-contents">all videos</div>}
+            element={<Home />}
           />
           <Route
             path="/liked-videos"
