@@ -8,7 +8,7 @@ const Rightmenu = () => {
         <div>
             <input type="checkbox" className="inputhider" id="click" />
             <div className="barr" id="click">
-                <label htmlFor="click" className='text-light mt-1'><IoMdMenu /></label>
+                <label htmlFor="click" className='text-light mt-1'><IoMdMenu style={{cursor:'pointer'}}/></label>
             </div>
             <div className="sidebarr p-2 h-100 text-light">
                 <div className="menur m-10">

@@ -9,8 +9,12 @@ const Leftmenu = () => {
         <div className="main_box">
 
             <div className="sidebarl">
-                <div className="menul m-10">
-                    <ul className="list-unstyled">
+                <div className="menul  h-100">
+                    <ul className="list-unstyled pb-5 h-100  d-flex flex-column justify-content-between">
+                        <div className="d-flex flex-column ">
+
+
+                        
                         <li onClick={() => navigate(`/home`)} >
                             <FaHome className="text-light m-2" />
                             <a  className="link-underline text-light link-underline-opacity-0">Home</a>
@@ -35,14 +39,18 @@ const Leftmenu = () => {
                             <FaUserCheck className="text-light m-2" />
                             <a  className="link-underline text-light link-underline-opacity-0">Subscribers</a>
                         </li>
-                        <li className="supportl">
+                        </div>
+                        <div className="d-flex flex-column">
+
+                        <li className="">
                             <CiCircleQuestion className="text-light m-2" />
                             <a  className="link-underline text-light link-underline-opacity-0">Supports</a>
                         </li>
-                        <li className="settingsl">
+                        <li className="">
                             <CiSettings className="text-light m-2" />
                             <a  className="link-underline text-light link-underline-opacity-0">Setting</a>
                         </li>
+                        </div>
                     </ul>
                 </div>
             </div>
