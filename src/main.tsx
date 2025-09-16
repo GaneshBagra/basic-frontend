@@ -10,7 +10,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/layout/layout.tsx";
 import PrivacyPageLayout from "./components/layout/privacyPageLayout.tsx";
 import Novideos from "./pages/Videos/NoVideos.tsx"
-import Home from "./pages/Videos/home.tsx";
+import Home from "./pages/Videos/Home.tsx";
 import VideoDetails from "./pages/Videos/VideoDetails.tsx";
 
 
