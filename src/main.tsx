@@ -12,6 +12,7 @@ import PrivacyPageLayout from "./components/layout/privacyPageLayout.tsx";
 import Novideos from "./pages/Videos/NoVideos.tsx"
 import Home from "./pages/Videos/Home.tsx";
 import VideoDetails from "./pages/Videos/VideoDetails.tsx";
+import ChannelNoVideos from "./pages/Channels/ChannelNoVideos.tsx";
 
 
 createRoot(document.getElementById("root")!).render(
@@ -56,6 +57,11 @@ createRoot(document.getElementById("root")!).render(
             path="/collections"
             element={<div className="main-contents">Liked videos</div>}
             />
+          <Route
+          path="/channel-no-videos"
+          element={<ChannelNoVideos/>}
+          />
+
         </Route>
             
       </Routes>

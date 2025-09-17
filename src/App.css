@@ -14,7 +14,7 @@ div img {
 
 .searchIcon {
     border: 1px solid white;
-    
+
     height: 40px;
     border-right: 0;
     border-radius: 0;
@@ -30,7 +30,7 @@ div img {
 
 
 .conten {
-    
+
     /* position: fixed; */
     /* top: 5px; */
     z-index: 5;
@@ -218,7 +218,7 @@ div img {
     width: 200px;
     background-color: transparent;
     border-right: 1px solid white;
-    
+
     /* transition: all 1000ms ease-out; */
 }
 
@@ -819,7 +819,7 @@ figure {
 
 
 /*All Videos css */
-.all-Videos-main{
+.all-Videos-main {
     color: white;
 }
 
@@ -854,30 +854,157 @@ figure {
 
 .col-7 {
     height: 100%;
-    /* border: 2px solid white; */
 }
 
 .video {
     height: 380px;
 }
 
-.col-12 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.col-12 img {
-    margin: 5px;
-    flex: 1;
-}
-
-.col-12 p {
-    margin: 5px;
-    flex: 2;
-}
-
-.row .col-12 img {
+.row .left-side .col-12 img {
     position: relative;
     width: 100%;
     height: 100px;
+}
+
+
+.row .right-side .col-12 img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    margin: 10px;
+    margin-bottom: 35px;
+    float: left;
+}
+
+.row .right-side .row .col-12 div .bottons-like {
+    border: 1px solid white;
+    border-right: 0;
+    font-size: 12px;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px 0 0 10px;
+    background-color: transparent;
+    float: right;
+}
+
+.row .right-side .row .col-12 div {
+    width: 100%;
+
+}
+
+.row .right-side .row .col-12 div .bottons-dislike {
+    border: 1px solid white;
+    border-radius: 0 10px 10px 0;
+    background-color: transparent;
+    width: 60px;
+    font-size: 12px;
+    height: 40px;
+    float: right;
+}
+
+.row .right-side .row .col-12 div .bottons-folder {
+    background-color: white;
+    border: 0;
+    font-family: 12px;
+    padding: 0 8px;
+    margin: 0 5px;
+    float: right;
+    height: 40px;
+    color: black;
+}
+
+.subscribe-buttons {
+    background-color: #ae7aff;
+    color: black;
+    border-radius: 0;
+    border: 0;
+    box-shadow: 5px 4px 0 rgb(76, 86, 100);
+    float: inline-end;
+    margin-top: 15px;
+}
+.hiddens{
+    display: none;
+}
+.hiddens2{
+    display: none
+}
+.hiddens:checked+ .hiddens1{
+    display:none ;
+}
+.hiddens:checked~ .hiddens2{
+    display: inline-block;
+}
+
+
+.subscribe-buttons:active {
+    box-shadow: 0px 0px 0 #ae7aff;
+    float: right;
+    transform: translate(4px, 4px);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+@media only screen and (max-width:650px) {
+    .comments {
+        height: 40px;
+        overflow: hidden;
+    }
+
+    .comments:active {
+        height: 100%;
+        overflow: auto;
+    }
+}
+
+
+.comment-box {
+    height: 30px;
+}
+
+.comment-box::placeholder {
+    padding: 10px;
+    color: white;
+}
+
+.row .left-side .row .col-12 div {
+    display: flex;
+    margin: 5px;
+}
+
+.row .left-side .row .col-12 {
+    display: flex;
+    border: 1px solid white;
+    height: 110px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.row .left-side .row .col-12 img {
+    width: 170px;
+}
+
+@media only screen and (max-width:1200px) {
+    .row .left-side .row .col-12 img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .row .left-side .row .col-12 {
+        height: 160px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .row .left-side .row .col-12 img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .row .left-side .row .col-12 {
+        height: 410px;
+    }
+
+    .row .left-side .row .col-12 {
+        display: block;
+    }
 }
