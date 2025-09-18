@@ -1,6 +1,6 @@
 import ReactPlayer from "react-player";
 import image from "../../components/layout/imges.webp";
-import source from "../../components/video1662251933.mp4";
+import source from "../../components/layout/sampleVideo.mp4";
 import {
   FaFolderPlus,
   FaThumbsDown,
