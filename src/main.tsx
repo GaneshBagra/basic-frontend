@@ -13,6 +13,7 @@ import Novideos from "./pages/Videos/NoVideos.tsx"
 import Home from "./pages/Videos/Home.tsx";
 import VideoDetails from "./pages/Videos/VideoDetails.tsx";
 import ChannelNoVideos from "./pages/Channels/ChannelNoVideos.tsx";
+import Dashboard from "./pages/Dashboard/Dashboard.tsx";
 
 
 createRoot(document.getElementById("root")!).render(
@@ -39,6 +40,10 @@ createRoot(document.getElementById("root")!).render(
           <Route
             path="/home"
             element={<Home />}
+          />
+          <Route
+            path="/dashboard"
+            element={<Dashboard />}
           />
           <Route
             path="/liked-videos"

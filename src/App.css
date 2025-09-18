@@ -923,16 +923,20 @@ figure {
     float: inline-end;
     margin-top: 15px;
 }
-.hiddens{
+
+.hiddens {
     display: none;
 }
-.hiddens2{
+
+.hiddens2 {
     display: none
 }
-.hiddens:checked+ .hiddens1{
-    display:none ;
+
+.hiddens:checked+.hiddens1 {
+    display: none;
 }
-.hiddens:checked~ .hiddens2{
+
+.hiddens:checked~.hiddens2 {
     display: inline-block;
 }
 
@@ -1007,4 +1011,133 @@ figure {
     .row .left-side .row .col-12 {
         display: block;
     }
+}
+
+
+/* dashboard css */
+
+.total {
+    height: 150px;
+    width: 30%;
+    margin-bottom: 0;
+    /* margin: 10px; */
+    margin: 20px auto;
+}
+.total div .text-dark {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.profile-icons {
+    height: 50px;
+    width: 60px;
+}
+
+.dashboard-table tr {
+    border: 1px solid white;
+}
+
+.dashboard-table tr th {
+    height: 50px;
+}
+
+.dashboard-table tr td {
+    /* height: 60px; */
+    padding: 10px;
+}
+tr button{
+    border: 0;
+}
+
+
+.uploadbotton{
+    border: 0;
+    background-color: rgb(174 122 255);
+    color: black;
+}
+
+
+
+/* upload css */
+
+
+.upload-div{
+    position: fixed;
+    height:600px;
+    right: 150px;
+    background-color: black;
+    width: 1050px;
+    overflow-y: auto;
+    border: 1px solid white;
+}
+
+.upload-div div:first-child{
+    margin: 10px 0;
+    width: 100%;
+}
+
+
+.upload-icon{
+    border: 1px dashed white;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+.upload-icon-icon{
+    background-color: #ae7aff;
+    width: 150px;
+    margin: auto;
+    height: 120px;
+    font-size: 100px;
+    border-radius: 100%;
+}
+
+.upload-icon input{
+    display: none;
+}
+.upload-icon button{
+background-color:#ae7aff;
+border: 0;
+}
+#files::file-selector-button{
+    background-color: #ae7aff;
+    border: 0;
+    height: 38px;
+    color: black;
+    width: 120px;
+    margin:5px;
+}
+.filess{
+    padding: 0;
+    border: 1px solid white;
+    border-radius: 0;
+    text-align: start;
+    width: 75%;
+    height: 50px;
+    background-color: transparent;
+}
+
+.labless{
+    width: 75%;
+    text-align: start;
+}
+
+
+#description{
+    height: 200px;
+}
+.filess:hover{
+    border-color:white;
+}
+
+.modal-header{
+    background-color: #242424;
+    color: white;
+}
+.modal-body{
+    background-color: #242424;
+    color: white;
 }
