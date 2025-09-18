@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
             <FaSearch />
           </button>
           <input
-            type="search"
+            type="text"
             placeholder="Search"
             className="border border-start-0 bg-transparent Search "
           />
