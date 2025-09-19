@@ -1,87 +1,69 @@
+/* Universal CSS Start from Here */
+
 * {
     font-family: ui-sans-serif, system-ui, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji",
         "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-/* navBar Css */
-
-header img,
-div img {
+.app-logo-h {
     height: 50px;
 }
 
-
-.searchIcon {
-    border: 1px solid white;
-
-    height: 40px;
-    border-right: 0;
-    border-radius: 0;
-    background-color: transparent;
-}
-
-.searchIcon:hover {
-    background-color: #242424;
-    ;
-    border-color: white;
-}
-
-
-
 .conten {
-
-    /* position: fixed; */
-    /* top: 5px; */
     z-index: 5;
 }
 
-.Search {
-    border: 1px solid white;
-    height: 40px;
-    width: 40vw;
-    background-color: transparent;
-    border-left: 0;
+.click-border-remove:focus,
+.click-border-remove:focus-visible {
+    outline: 0;
+    box-shadow: 0;
 }
 
-.Search::placeholder {
-    color: white;
-}
-
-.btns1:focus,
-.btns1:focus-visible,
-.btns2:focus,
-.btns2:focus-visible,
-.Search:focus,
-.Search:focus-visible,
-.btns3:focus,
-.btns3:focus-visible,
-.searchIcon:focus,
-.searchIcon.btns1:focus-visible,
-.btns1-1:focus,
-.btns2-1:focus,
-.btns1-1:focus-visible,
-.btns2-1:focus-visible {
-    outline: none;
-}
-
-.btns1 {
-    background-color: transparent;
-    border-radius: 0;
-    border: 0;
-}
-
-.btns1:hover {
+.Botton-hover-color {
     background-color: rgb(76, 86, 100);
 }
 
-.btns2 {
+.Botton-Animation {
     background-color: #ae7aff;
     color: black;
     border-radius: 0;
     border: 0;
     box-shadow: 5px 4px 0 rgb(76, 86, 100);
 }
+
+.Botton-Animation:active {
+    box-shadow: 0px 0px 0 #ae7aff;
+    transform: translate(4px, 4px);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+
+/* Universal CSS End Here */
+
+
+/* Navbar.tsx file CSS Start Here */
+
+
+.NavBar-Search-icon {
+    border: 1px solid;
+    height: 40px;
+}
+
+.NavBar-Search-input {
+    height: 40px;
+    width: 40vw;
+}
+
+.NavBar-Search-input::placeholder {
+    color: white;
+}
+
+
+
+
+
 
 .btns3 {
     display: none;
@@ -96,22 +78,15 @@ div img {
     display: none;
 }
 
-.btns2:active {
-    box-shadow: 0px 0px 0 #ae7aff;
-    transform: translate(4px, 4px);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
 
 @media only screen and (max-width: 650px) {
 
-    .hide .Search,
-    .btns1,
-    .btns2 {
+    .NavBar-hide {
         display: none;
     }
 
 
-    .btns1-1 {
+    /* .btns1-1 {
         background-color: #ae7aff;
         color: black;
         position: relative;
@@ -124,7 +99,7 @@ div img {
         width: 200px;
         box-shadow: 8px 8px 0 rgb(76, 86, 100);
 
-    }
+    } */
 
     .mens {
         display: block;
@@ -1023,6 +998,7 @@ figure {
     /* margin: 10px; */
     margin: 20px auto;
 }
+
 .total div .text-dark {
     height: 40px;
     width: 40px;
@@ -1047,12 +1023,13 @@ figure {
     /* height: 60px; */
     padding: 10px;
 }
-tr button{
+
+tr button {
     border: 0;
 }
 
 
-.uploadbotton{
+.uploadbotton {
     border: 0;
     background-color: rgb(174 122 255);
     color: black;
@@ -1063,9 +1040,9 @@ tr button{
 /* upload css */
 
 
-.upload-div{
+.upload-div {
     position: fixed;
-    height:600px;
+    height: 600px;
     right: 150px;
     background-color: black;
     width: 1050px;
@@ -1073,20 +1050,21 @@ tr button{
     border: 1px solid white;
 }
 
-.upload-div div:first-child{
+.upload-div div:first-child {
     margin: 10px 0;
     width: 100%;
 }
 
 
-.upload-icon{
+.upload-icon {
     border: 1px dashed white;
     width: 75%;
     text-align: center;
     margin: auto;
     margin-top: 10px;
 }
-.upload-icon-icon{
+
+.upload-icon-icon {
     background-color: #ae7aff;
     width: 150px;
     margin: auto;
@@ -1095,22 +1073,25 @@ tr button{
     border-radius: 100%;
 }
 
-.upload-icon input{
+.upload-icon input {
     display: none;
 }
-.upload-icon button{
-background-color:#ae7aff;
-border: 0;
+
+.upload-icon button {
+    background-color: #ae7aff;
+    border: 0;
 }
-#files::file-selector-button{
+
+#files::file-selector-button {
     background-color: #ae7aff;
     border: 0;
     height: 38px;
     color: black;
     width: 120px;
-    margin:5px;
+    margin: 5px;
 }
-.filess{
+
+.filess {
     padding: 0;
     border: 1px solid white;
     border-radius: 0;
@@ -1120,30 +1101,32 @@ border: 0;
     background-color: transparent;
 }
 
-.labless{
+.labless {
     width: 75%;
     text-align: start;
 }
 
 
-#description{
+#description {
     height: 200px;
 }
-.filess:hover{
-    border-color:white;
+
+.filess:hover {
+    border-color: white;
 }
 
-.modal-header{
+.modal-header {
     background-color: #242424;
     color: white;
 }
-.modal-body{
+
+.modal-body {
     background-color: #242424;
     color: white;
 }
 
 
-.profile-icont{
+.profile-icont {
     width: 60px;
     height: 60px;
     border-radius: 100px;

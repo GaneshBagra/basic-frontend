@@ -63,7 +63,6 @@ const ChannelHeader = () => {
             {/* Videos */}
             {channelrender === "videos" && (
                 <ChannelVideos />
-                // <ChannelPlaylistVideos/>
             )}
 
             {/* no Playlist */}
